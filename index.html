@@ -3,7 +3,78 @@
   <head>
     <title>The Talon Online News</title>
     <link rel="icon" href="eagletablogoimage.png">
-    <link rel="stylesheet" href="style.css">
+    <style>
+      /* Global Styles */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      /* Header Styles */
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+      header h1 {
+        margin: 0;
+      }
+      /* Article Styles */
+      article {
+        margin: 40px 0;
+      }
+      article h2 {
+        font-size: 28px;
+        margin-bottom: 10px;
+      }
+      article p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+      }
+      .article-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #f2f2f2;
+        border-radius: 5px;
+      }
+      .article-info img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 10px;
+      }
+      .read-more {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 20px;
+        text-decoration: none;
+        transition: all 0.2s ease-in-out;
+      }
+      .read-more:hover {
+        background-color: #fff;
+        color: #333;
+        border: 1px solid #333;
+      }
+      /* Footer Styles */
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -14,36 +85,85 @@
       <article>
         <h2>Article Title</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ultrices fringilla massa, quis sollicitudin neque iaculis eget. Phasellus mollis risus vitae commodo suscipit. Aliquam erat volutpat.</p>
-        <a href="tal.html">Read more</a>
+        <div class="article-info">
+          <div>
+            <img src="author1.jpg" alt="Author 1">
+            <img src="author2.jpg" alt="Author 2">
+            <img src="author3.jpg" alt="Author 3">
+          </div>
+          <a href="tal.html" class="read-more">Read more</a>
+        </div>
       </article>
       <article>
         <h2>Another Article Title</h2>
         <p>Nulla id libero urna. Fusce consequat, ex eu commodo hendrerit, lorem eros malesuada ipsum, nec aliquam sapien tellus ac quam. Etiam quis mollis felis. Nulla facilisi.</p>
-        <a href="tal.html">Read more</a>
-      </article>
-    </div>
-    <section class="latest-article">
-      <div class="container">
-        <h2>Latest Article</h2>
-        <div class="article">
-          <div class="article-header">
-            <img src="author3.jpg" alt="Author Name">
-            <div class="article-info">
-              <h3>Article Title 3</h3>
-              <p class="author-name">By Author Name 3</p>
-              <p class="date">Published on April 9th, 2023</p>
+        <div class="article-info">
+          <div>
+            <img src="author4.jpg" alt="Author 4">
             </div>
-          </div>
-          <div class="article-body">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ultrices fringilla massa, quis sollicitudin neque iaculis eget. Phasellus mollis risus vitae commodo suscipit. Aliquam erat volutpat.</p>
-          </div>
-          <a href="tal.html" class="read-more-btn">Read more</a>
+<footer>
+  <p>&copy; 2023 Newsletter Name. All rights reserved.</p>
+</footer>
+
+<!-- Latest Article and Authors Section -->
+<section id="latest-article">
+  <div class="container">
+    <h2>Latest Article</h2>
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <img src="latest-article-image.jpg" alt="Latest Article Image">
+      </div>
+      <div class="col-12 col-md-6">
+        <h3>Article Title</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ultrices fringilla massa, quis sollicitudin neque iaculis eget. Phasellus mollis risus vitae commodo suscipit. Aliquam erat volutpat.</p>
+        <p>Authors: John Doe, Jane Smith</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="recent-articles">
+  <div class="container">
+    <h2>Recent Articles</h2>
+    <div class="row">
+      <div class="col-12 col-md-4">
+        <div class="article-card">
+          <img src="article-image-1.jpg" alt="Article 1 Image">
+          <h3>Article 1 Title</h3>
+          <p>Authors: John Doe, Jane Smith</p>
+          <a href="tal.html">Read more</a>
         </div>
       </div>
-    </section>
-    <footer>
-      <p>&copy; 2023 Newsletter Name. All rights reserved.</p>
-    </footer>
-    <script src="index.js"></script>
-  </body>
+      <div class="col-12 col-md-4">
+        <div class="article-card">
+          <img src="article-image-2.jpg" alt="Article 2 Image">
+          <h3>Article 2 Title</h3>
+          <p>Authors: John Doe, Jane Smith</p>
+          <a href="tal.html">Read more</a>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="article-card">
+          <img src="article-image-3.jpg" alt="Article 3 Image">
+          <h3>Article 3 Title</h3>
+          <p>Authors: John Doe, Jane Smith</p>
+          <a href="tal.html">Read more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2023 Newsletter Name. All rights reserved.</p>
+</footer>
+
+<!-- Script to make buttons rounded -->
+<script>
+  const buttons = document.querySelectorAll("button, a");
+  buttons.forEach(button => {
+    button.style.borderRadius = "20px";
+  });
+</script>
+ </body>
 </html>
