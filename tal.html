@@ -1,67 +1,116 @@
-
 <!DOCTYPE html>
 <html>
   <head>
     <title>List of Articles</title>
-       <link rel="icon" href="Untitled_design__4_-removebg-preview.png">
     <style>
       /* Global Styles */
       body {
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
+        background-color: #f7f7f7;
       }
       .container {
         max-width: 800px;
         margin: 0 auto;
         padding: 20px;
       }
-      /* Article Styles */
-      .article-list {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-      }
-      .article-list li {
-        margin-bottom: 20px;
-      }
-      .article-list h2 {
-        font-size: 24px;
-        margin-bottom: 10px;
-      }
-      .article-list p {
-        font-size: 16px;
-        line-height: 1.5;
-        margin-bottom: 10px;
-      }
-      .article-list a {
-        display: inline-block;
-        padding: 5px 10px;
+      /* Header Styles */
+      header {
         background-color: #333;
         color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+      header h1 {
+        margin: 0;
+      }
+      /* Article Styles */
+      .articles {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      .article {
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        margin-bottom: 20px;
+        padding: 20px;
+        width: calc(33.33% - 10px);
+      }
+      .article h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+      .article p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+      }
+      .article a {
+        display: block;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        border-radius: 20px;
         text-decoration: none;
-        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+      .article a:hover {
+        background-color: #555;
+      }
+      /* Footer Styles */
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
       }
     </style>
   </head>
   <body>
-    <div class="container">
-      <h1>Articles</h1>
-     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ultrices fringilla massa, quis sollicitudin neque iaculis eget. Phasellus mollis risus vitae commodo suscipit.</p>
+    <header>
       <h1>List of Articles</h1>
+    </header>
+    <div class="container">
+      <div class="articles">
+        <div class="article">
           <h2>Article Title 1</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ultrices fringilla massa, quis sollicitudin neque iaculis eget. Phasellus mollis risus vitae commodo suscipit.</p>
-          <a href="tal.html">Read more</a>
-
-     
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ultrices fringilla massa, quis sollicitudin neque iaculis eget.</p>
+          <a href="#">Read More</a>
+        </div>
+        <div class="article">
           <h2>Article Title 2</h2>
-          <p>Nulla id libero urna. Fusce consequat, ex eu commodo hendrerit, lorem eros malesuada ipsum, nec aliquam sapien tellus ac quam. Etiam quis mollis felis. Nulla facilisi.</p>
-          <a href="tal.html">Read more</a>
-
+          <p>Phasellus mollis risus vitae commodo suscipit. Aliquam erat volutpat. Nulla id libero urna. Fusce consequat, ex eu commodo hendrerit.</p>
+          <a href="#">Read More</a>
+        </div>
+        <div class="article">
           <h2>Article Title 3</h2>
-          <p>Mauris ut erat sit amet augue hendrerit tempor. Maecenas consequat nisi eu ligula dapibus tincidunt. Integer ac tellus diam. Aenean dapibus tincidunt tellus, non congue urna molestie id.</p>
-          <a href="#">Read more</a>
-
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ultrices fringilla massa, quis sollicitudin neque iaculis eget.</p>
+          <a href="#">Read More</a>
+        </div>
+        <div class="article">
+          <h2>Article Title 4</h2>
+          <p>Phasellus mollis risus vitae commodo suscipit. Aliquam erat volutpat. Nulla id libero urnaFusce consequat, ex eu commodo hendrerit.</p>
+          <a href="#">Read More</a>
+        </div>
+        <div class="article">
+          <h2>Article Title 5</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ultrices fringilla massa, quis sollicitudin neque iaculis eget.</p>
+          <a href="#">Read More</a>
+        </div>
+        <div class="article">
+          <h2>Article Title 6</h2>
+          <p>Phasellus mollis risus vitae commodo suscipit. Aliquam erat volutpat. Nulla id libero urna. Fusce consequat, ex eu commodo hendrerit.</p>
+          <a href="#">Read More</a>
+       </div>
+      </div>
     </div>
+  <footer>
+    <p>© 2023 My News Site</p>
+  </footer>
+
   </body>
 </html>
