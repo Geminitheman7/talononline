@@ -3,85 +3,7 @@
   <head>
     <title>The Talon Online News</title>
     <link rel="icon" href="eagletablogoimage.png">
-    <style>
-      /* Global Styles */
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-      }
-      .container {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-      }
-      /* Header Styles */
-      header {
-        background-color: #333;
-        color: #fff;
-        padding: 20px;
-        text-align: center;
-      }
-      header h1 {
-        margin: 0;
-      }
-      /* Article Styles */
-      article {
-        margin: 40px 0;
-      }
-      article h2 {
-        font-size: 28px;
-        margin-bottom: 10px;
-      }
-      article p {
-        font-size: 16px;
-        line-height: 1.5;
-        margin-bottom: 20px;
-      }
-      .latest-article {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        padding: 20px;
-        background-color: #fff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        z-index: 1;
-      }
-      .latest-article h2 {
-        margin-bottom: 5px;
-      }
-      .latest-article .author {
-        display: flex;
-        align-items: center;
-        margin-top: 5px;
-      }
-      .latest-article .author img {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        margin-right: 10px;
-      }
-      .latest-article .author button {
-        border-radius: 20px;
-        background-color: #333;
-        color: #fff;
-        padding: 5px 10px;
-        border: none;
-        font-size: 16px;
-        cursor: pointer;
-      }
-      .latest-article .author button:hover {
-        background-color: #444;
-      }
-      /* Footer Styles */
-      footer {
-        background-color: #333;
-        color: #fff;
-        padding: 20px;
-        text-align: center;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header>
@@ -100,29 +22,28 @@
         <a href="tal.html">Read more</a>
       </article>
     </div>
-    <div class="latest-article">
-      <h2>Latest Article Title</h2>
-      <div class="Author">
-    </div>
-    <div class="article">
-      <div class="article-header">
-        <img src="author3.jpg" alt="Author Name">
-        <div class="article-info">
-          <h3>Article Title 3</h3>
-          <p class="author-name">By Author Name 3</p>
-          <p class="date">Published on April 9th, 2023</p>
+    <section class="latest-article">
+      <div class="container">
+        <h2>Latest Article</h2>
+        <div class="article">
+          <div class="article-header">
+            <img src="author3.jpg" alt="Author Name">
+            <div class="article-info">
+              <h3>Article Title 3</h3>
+              <p class="author-name">By Author Name 3</p>
+              <p class="date">Published on April 9th, 2023</p>
+            </div>
+          </div>
+          <div class="article-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ultrices fringilla massa, quis sollicitudin neque iaculis eget. Phasellus mollis risus vitae commodo suscipit. Aliquam erat volutpat.</p>
+          </div>
+          <a href="tal.html" class="read-more-btn">Read more</a>
         </div>
       </div>
-      <div class="article-body">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ultrices fringilla massa, quis sollicitudin neque iaculis eget. Phasellus mollis risus vitae commodo suscipit. Aliquam erat volutpat.</p>
-      </div>
-      <a href="tal.html" class="read-more-btn">Read more</a>
-    </div>
-  </div>
-</section>
-<footer>
-  <p>&copy; 2023 Newsletter Name. All rights reserved.</p>
-</footer>
-<script src="index.js"></script>
-</body>
+    </section>
+    <footer>
+      <p>&copy; 2023 Newsletter Name. All rights reserved.</p>
+    </footer>
+    <script src="index.js"></script>
+  </body>
 </html>
