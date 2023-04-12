@@ -1,9 +1,8 @@
- 
 <!DOCTYPE html>
 <html>
   <head>
     <title>The Talon Online News</title>
-   <link rel="icon" href="eagletablogoimage.png">
+    <link rel="icon" href="eagletablogoimage.png">
     <style>
       /* Global Styles */
       body {
@@ -39,6 +38,42 @@
         line-height: 1.5;
         margin-bottom: 20px;
       }
+      .latest-article {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        z-index: 1;
+      }
+      .latest-article h2 {
+        margin-bottom: 5px;
+      }
+      .latest-article .author {
+        display: flex;
+        align-items: center;
+        margin-top: 5px;
+      }
+      .latest-article .author img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+      .latest-article .author button {
+        border-radius: 20px;
+        background-color: #333;
+        color: #fff;
+        padding: 5px 10px;
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      .latest-article .author button:hover {
+        background-color: #444;
+      }
       /* Footer Styles */
       footer {
         background-color: #333;
@@ -65,8 +100,29 @@
         <a href="tal.html">Read more</a>
       </article>
     </div>
-    <footer>
-      <p>&copy; 2023 Newsletter Name. All rights reserved.</p>
-    </footer>
-  </body>
+    <div class="latest-article">
+      <h2>Latest Article Title</h2>
+      <div class
+    </div>
+    <div class="article">
+      <div class="article-header">
+        <img src="author3.jpg" alt="Author Name">
+        <div class="article-info">
+          <h3>Article Title 3</h3>
+          <p class="author-name">By Author Name 3</p>
+          <p class="date">Published on April 9th, 2023</p>
+        </div>
+      </div>
+      <div class="article-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ultrices fringilla massa, quis sollicitudin neque iaculis eget. Phasellus mollis risus vitae commodo suscipit. Aliquam erat volutpat.</p>
+      </div>
+      <a href="tal.html" class="read-more-btn">Read more</a>
+    </div>
+  </div>
+</section>
+<footer>
+  <p>&copy; 2023 Newsletter Name. All rights reserved.</p>
+</footer>
+<script src="index.js"></script>
+</body>
 </html>
