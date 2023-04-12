@@ -7,6 +7,7 @@ body {
 body {
  background-image: url("1-13675_eagle-wings-png-photo-eagle-clip-art-black.png");
  background-color: #cccccc;
+   background-repeat: no-repeat;
 }
 .container {
   max-width: 800px;
