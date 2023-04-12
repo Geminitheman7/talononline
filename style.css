@@ -1,0 +1,121 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header Styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+/* Article Styles */
+article {
+  margin: 40px 0;
+  position: relative; /* added for sticky footer */
+}
+
+article h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+article p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Read More Button Styles */
+.read-more {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+  background-color: #444;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Latest Article Styles */
+.latest-article {
+  margin-top: 100px;
+  position: relative;
+}
+
+.latest-article h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.latest-article p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.latest-article .author {
+  margin-bottom: 20px;
+}
+
+.latest-article .author img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.latest-article .author span {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* "Recent Articles" Button Styles */
+.recent-articles {
+  display: block;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.recent-articles a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.recent-articles a:hover {
+  background-color: #444;
+}
