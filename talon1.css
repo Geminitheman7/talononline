@@ -12,6 +12,7 @@ body {
 	line-height: 1.5;
 	color: #333;
 	 background-image: url("1-13675_eagle-wings-png-photo-eagle-clip-art-black.png");
+	 background-repeat: no-repeat;
 }
 
 .container {
