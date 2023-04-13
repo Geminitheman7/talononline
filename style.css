@@ -10,7 +10,7 @@ header {
     padding: 10px 16px;
     background-color: red;
     (insert #myHeader styles, if needed)
- opacity: 0.1;
+ opacity: 0.5;
 }
 
 .container {
