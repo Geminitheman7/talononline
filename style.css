@@ -73,7 +73,7 @@ article p {
 }
 
 .read-more {
-  background-color: #333;
+  background-color: #8B0000;
   color: #fff;
   padding: 10px 20px;
   text-decoration: none;
@@ -87,7 +87,7 @@ article p {
 .read-more:hover {
   background-color: #fff;
   color: #333;
-  border: 2px solid #333; /* Add a border on hover */
+  border: 2px solid #8B0000; /* Add a border on hover */
 }
 
 /* Latest Article and Recent Articles Styles */
@@ -141,7 +141,7 @@ section h2 {
 }
 
 .article-card a {
-  background-color: #333;
+  background-color: #8B0000;
   color: #fff;
   padding: 10px 20px;
   text-decoration: none;
