@@ -4,7 +4,9 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-
+img{
+width: 100%;
+}
 /* Global Styles */
 body {
 	font-family: Arial, sans-serif;
@@ -84,4 +86,5 @@ footer {
 footer p {
 	text-align: center;
 	font-size: 14px;
+	color: #FFFFFF;
 }
