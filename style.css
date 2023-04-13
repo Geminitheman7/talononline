@@ -11,6 +11,7 @@ header {
     background-color: #8B0000;
     (insert #myHeader styles, if needed)
  opacity: 0.5;
+  color:#FFFFFF;
 }
 
 .container {
