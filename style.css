@@ -20,7 +20,7 @@ body {
 
 .topnav a {
   float: left;
-  color:#8B0000 ;
+  color:#FFFFFF ;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -28,7 +28,7 @@ body {
 }
 
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: #8B0000;
   color: black;
 }
 
