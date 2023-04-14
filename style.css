@@ -15,6 +15,7 @@ header {
     (insert #myHeader styles, if needed)
  opacity: 0.5;
   color:#FFFFFF;
+  font-family: Garamond, serif;
 }
 
 .container {
